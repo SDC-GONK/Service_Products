@@ -1,0 +1,38 @@
+{
+  "name": "service_products",
+  "version": "1.0.0",
+  "description": "Products module system design",
+  "main": "index.js",
+  "scripts" :{
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDC-GONK/Service_Products.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDC-GONK/Service_Products/issues"
+  },
+  "homepage": "https://github.com/SDC-GONK/Service_Products#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "epress": "0.0.1-security",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.6",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "nodemon": "^2.0.16"
+  }
+}
