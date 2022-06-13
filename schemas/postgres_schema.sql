@@ -67,4 +67,6 @@ create table if not exists skus(
         on delete cascade on update cascade
 );
 
+-- RUN:
 -- psql postgres -U jerrytapia -f schemas/postgres_schema.sql
+
