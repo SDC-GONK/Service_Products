@@ -70,3 +70,9 @@ create table if not exists skus(
 -- RUN:
 -- psql postgres -U jerrytapia -f schemas/postgres_schema.sql
 
+--INDEXING
+CREATE INDEX productInfoIndex on product_information(product_id);
+CREATE INDEX productStylesIndex on product_styles(product_id);
+CREATE INDEX relatedProductsIndex ON related_products(parent_product);
+CREATE INDEX photosIndex ON photos(product_styles_id);
+CREATE INDEX skusIndex ON skus(product_styles_id);
