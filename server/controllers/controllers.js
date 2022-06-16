@@ -22,12 +22,9 @@ exports.getProductStyles = (req, res) => {
   const { product_id } = req.params;
   console.log(product_id);
 
-  try {
-    const styles = models.findProductStyles(product_id);
-    res.status(200).send(styles);
-  } catch (err) {
-    res.sendStatus(500);
-  }
+  models.findProductStyles(product_id)
+    .then((products) => res.status(200).send(products))
+    .catch(() => res.sendStatus(500));
 };
 
 exports.getRelatedProducts = (req, res) => {
