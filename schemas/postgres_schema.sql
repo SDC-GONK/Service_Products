@@ -76,3 +76,5 @@ CREATE INDEX productStylesIndex on product_styles(product_id);
 CREATE INDEX relatedProductsIndex ON related_products(parent_product);
 CREATE INDEX photosIndex ON photos(product_styles_id);
 CREATE INDEX skusIndex ON skus(product_styles_id);
+
+--TODO fix 'null' so it ouputs null
