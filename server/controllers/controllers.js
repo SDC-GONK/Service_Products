@@ -20,8 +20,6 @@ exports.getProductInfo = (req, res) => {
 exports.getProductStyles = (req, res) => {
   // eslint-disable-next-line camelcase
   const { product_id } = req.params;
-  console.log(product_id);
-
   models.findProductStyles(product_id)
     .then((products) => res.status(200).send(products))
     .catch(() => res.sendStatus(500));
