@@ -34,7 +34,7 @@ exports.findProductInfo = (product_id) => {
     .catch((err) => console.log(err));
 };
 
-exports.findProductStyles = async (product_id) => {
+exports.findProductStyles = (product_id) => {
   query = `
   SELECT
     ps.product_id AS product_id,

@@ -17,13 +17,13 @@ exports.getProductInfo = (req, res) => {
     .catch(() => res.sendStatus(500));
 };
 
-exports.getProductStyles = async (req, res) => {
+exports.getProductStyles = (req, res) => {
   // eslint-disable-next-line camelcase
   const { product_id } = req.params;
   console.log(product_id);
 
   try {
-    const styles = await models.findProductStyles(product_id);
+    const styles = models.findProductStyles(product_id);
     res.status(200).send(styles);
   } catch (err) {
     res.sendStatus(500);
