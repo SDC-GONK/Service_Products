@@ -9,6 +9,8 @@ const pool = new Pool({
   database: process.env.DB_DATABASE,
 });
 
+// changed env files to align with remote server
+
 pool.connect()
   .then(() => console.log('successfully connected to database'))
   .catch((err) => console.log('error connecting to db', err));
