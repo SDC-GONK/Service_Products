@@ -16,6 +16,9 @@ app.get('/products', controllers.getProducts);
 app.get('/products/:product_id', controllers.getProductInfo);
 app.get('/products/:product_id/styles', controllers.getProductStyles);
 app.get('/products/:product_id/related', controllers.getRelatedProducts);
+app.get('/loaderio-5481d024c373977d499f84741e1740a1.txt', (req, res) => {
+  res.send('loaderio-5481d024c373977d499f84741e1740a1');
+});
 
 app.listen(process.env.PORT, () => {
   console.log(`Products server listening on port ${process.env.PORT}`);
