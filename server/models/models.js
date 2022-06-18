@@ -19,7 +19,7 @@ exports.findProductInfo = (product_id) => {
     json_agg(
       json_build_object(
         'feature', pi.feature,
-        'value', pi.feature
+        'value', pi.value
       )
     ) AS features
   FROM products p
